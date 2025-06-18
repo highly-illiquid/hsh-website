@@ -1,0 +1,26 @@
+
+backend:
+  name: git-gateway
+  branch: main # Or master, depending on your default branch
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "properties"
+    label: "Properties"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "string", default: "Apartment"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Price (in Baht)", name: "price", widget: "number"}
+      - {label: "For Sale or Rent", name: "status", widget: "select", options: ["For Sale", "For Rent"]}
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "Bedrooms", name: "bedrooms", widget: "number"}
+      - {label: "Bathrooms", name: "bathrooms", widget: "number"}
+      - {label: "Square Meters", name: "sqm", widget: "number"}
+      - {label: "Description", name: "description", widget: "markdown"}
+
