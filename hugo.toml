@@ -1,0 +1,40 @@
+# This imports the theme as a module
+[module]
+[[module.imports]]
+  path = "github.com/devcows/hugo-universal-theme"
+
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Bangkok Real Estate"
+
+[params]
+    viewMorePostLink = "/blog/"
+    author = "Your Name"
+    description = "Real estate listings in Bangkok"
+
+    # Google Maps
+    maps_api_key = ""
+
+    # Contact form
+    contact_form_action = "#" # Replace with your form action
+
+    # Company information
+    company = "Home Suite Home"
+    address = "123 Sukhumvit Road, Bangkok, Thailand"
+    phone = "+66 2 123 4567"
+    email = "contact@example.com"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Properties"
+    url = "/portfolio/"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
